@@ -1,0 +1,25 @@
+name: release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          cache: pnpm
+          node-version: latest
+
+      - name: install dependencies
+        run: pnpm install
+
+      - name: build
+        run: pnpm build
