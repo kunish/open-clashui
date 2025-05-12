@@ -12,7 +12,7 @@
   "dependencies": {
     "@dagrejs/dagre": "^1.1.4",
     "@formkit/auto-animate": "^0.8.2",
-    "@iconify-json/lucide": "^1.2.41",
+    "@iconify-json/lucide": "^1.2.42",
     "@nuxt/ui": "^3.1.1",
     "@tanstack/vue-table": "^8.21.3",
     "@valibot/i18n": "^1.0.0",
