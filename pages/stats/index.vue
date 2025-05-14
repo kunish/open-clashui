@@ -60,9 +60,9 @@ const [DefineWidget, Widget] = createReusableTemplate<{
       />
     </div>
 
-    <div class="flex flex-col gap-2">
-      <ChartSpeed class="h-80" />
-      <ChartFlow class="h-80" />
+    <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+      <ChartSpeed class="h-80 flex-1" />
+      <ChartFlow class="h-80 flex-1" />
     </div>
   </div>
 </template>
